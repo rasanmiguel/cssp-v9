@@ -1,0 +1,392 @@
+/* Global CSS */
+body {
+    background-color: #400000;
+}
+
+/* CSS for main header text */
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+h3 {
+    font-size: 0.9em;
+}
+
+h1,
+h2,
+h3 {
+    color: white;
+}
+
+
+/* Main Page Header */
+
+.header-main {
+    position: relative;
+    padding-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #400000;
+    font-family: "Lora", serif;
+}
+
+.header-text {
+    justify-content: center;
+    text-align: center;
+}
+
+.header-logo {
+    height: 6em;
+}
+
+
+
+/* Navbar CSS */
+
+.navbar-custom {
+    position: fixed;
+    background-color: white !important;
+    z-index: 5;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-link {
+    color: black !important;
+    font-family: "Lora", serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar-toggler {
+    background-color: #400000;
+}
+
+/* Homepage Image CSS */
+
+.homepage-image img {
+    width: 100%;
+}
+
+.homepage-image .portal-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: auto;
+    font-size: 1.5vw;
+    background-color: maroon;
+    font-family: "Lora", serif;
+}
+
+.homepage-image .portal-btn:hover {
+    opacity: 0.8;
+}
+
+.homepage-image .portal-btn a {
+    /* Remove hyperlink underline and change text color inside BOOK NOW button */
+    text-decoration: none;
+    color: white;
+}
+
+.homepage-image .portal-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Responsive font size */
+    font-size: clamp(20px, 3vw, 60px);
+    font-family: "Lora", serif;
+    color: yellow;
+    -webkit-text-stroke-width: 0.9px;
+    /* Controls text outline */
+    -webkit-text-stroke-color: black;
+    z-index: 1;
+}
+
+
+
+
+
+/* Intro Content */
+
+.intro-section {
+    font-family: Raleway, sans-serif;
+    background-color: #222140;
+    color: white;
+}
+
+.intro-section p {
+    font-size: 1.3em;
+}
+
+.intro-section img {
+    max-width: 80%;
+}
+
+.vertical-line {
+    border-left: 2px solid yellow;
+    height: 37em;
+    position: relative;
+    margin: 0px 0px 0px 20px;
+    left: 60%
+}
+
+
+/* Facilities Carousel */
+
+.carousel-desc {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 1em;
+    border-radius: 10px;
+    color: black;
+    font-family: Raleway, sans-serif;
+}
+
+.carousel-desc h5 {
+    font-weight: bold;
+}
+
+.carousel-desc p {
+    font-weight: 500;
+}
+
+/* Gallery in Home Page */
+
+.gallery {
+    /* Main Gallery Section */
+    background-color: #212529;
+    text-align: center;
+    z-index: 1;
+}
+
+.gallery h2 {
+    /* Gallery Header Title */
+    color: yellow;
+    font-family: "Raleway", serif;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.gallery img {
+    /* Gallery Images */
+    border-radius: 5px;
+    background-color: black !important;
+}
+
+.gallery-item p {
+    /* Gallery Text*/
+    font-family: "Raleway", serif;
+    color: white;
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+}
+
+
+
+
+
+/* Footer CSS */
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: #400000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+    font-family: "Raleway", sans-serif;
+}
+
+.admin-footer {
+    height: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.admin-footer p {
+    margin: 0;
+    color: black;
+    font-family: Raleway, sans-serif;
+}
+
+
+/* Div Fix to prevent Navbar overlaps */
+
+.div-fix {
+    /* Div fix for all pages */
+    padding-top: 80px;
+}
+
+.facilities-div-fix {
+    /* Fiv Fix for Facilities Page Carousel */
+    padding-top: 65px;
+}
+
+.contact-us-div-fix {
+    padding-top: 60px;
+}
+
+
+/* Contact Us CSS */
+/*Style container for contact us*/
+.contact-section {
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    padding: 0 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+    align-items: center;
+    height: auto;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.contact-background {
+    background-color: #400000;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+/*Style the table*/
+tr.noBorder td {
+    border: 0;
+}
+
+
+/* Formfacade Size Control */
+#ff-compose {
+    margin: auto;
+    border-radius: 10px;
+    background-color: purple;
+}
+
+
+/* Login Page */
+
+.login-container {
+    /* Login Box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
+}
+
+.login-form {
+    /* Bordered form */
+    border: 2px solid black;
+    width: 400px;
+    padding: 40px;
+    border-radius: 1%;
+    background-color: whitesmoke;
+}
+
+input[type=text],
+input[type=password] {
+    /* Full-width inputs */
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.wide-button {
+    /* Login buttons */
+    background-color: #0491aa;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 1%;
+}
+
+.wide-button:hover {
+    /* Add a hover effect for buttons */
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    /* Extra style for the cancel button (red) */
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    /* Center Logo in Login Box */
+    text-align: center;
+    margin: 24px 0 12px 0;
+    background-color: whitesmoke;
+}
+
+.imgcontainer h2 {
+    /* Login Box Header 2 */
+    color: black;
+}
+
+.imgcontainer h3 {
+    /* Login Box Header 3 */
+    color: black;
+}
+
+.login-page-background {
+    background-image: url("./media/generic-room.jpg");
+}
+
+/* Contact Us Section */
+
+.section-contact-us {
+    /* Dark transparent background */
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url("./media/upd-trees.jpg");
+}
+
+.section-header-text h2 {
+    /* Contact Us Headers */
+    color: yellow;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.googleForm {
+    height: 85.5vh;
+    overflow-y: auto;
+}
+
+.googleCalendar iframe {
+    height: 85.5vh;
+    border-radius: 1.3%;
+}

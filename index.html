@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSP FRRP</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,700;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-custom navbar-expand-lg navbar-dark bg-light p-1 py-md-1">
+        <button class="navbar-toggler w-100" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="facilities.html"><i class="fa fa-building-o" aria-hidden="true"></i>
+                        Facilities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calendar.html"><i class="fa fa-calendar" aria-hidden="true"></i> Calendar
+                        and Reservation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html"><i class="fa fa-phone" aria-hidden="true"></i> Contact
+                        Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar End-->
+
+
+
+    <!-- Main Page Header -->
+    <header class="header-main container-fluid">
+        <!-- Header Logo -->
+        <div class="header-image">
+            <img class="header-logo" src="./media/up_logo.png" />
+            <img class="header-logo" src="./media/cssp_logo.png" />
+        </div>
+
+        <!-- Header Text -->
+        <div class="header-text">
+            <h1>University of the Philippines Diliman</h1>
+            <h2>College of Social Sciences and Philosopy</h2>
+            <h3>Facilities and Rooms Reservation Portal</h3>
+        </div>
+    </header>
+    <!-- Main Header End -->
+
+
+
+    <!-- Homepage Image -->
+    <div class="homepage-image container-fluid position-relative text-center p-1 py-md-1">
+        <img src="./media/palma-2.jpg">
+        <p class="portal-text"><b>Facilities and Rooms Reservation Portal</b></p>
+        <button class="portal-btn btn btn-primary position-absolute">
+            <a class="btn-text" href="calendar.html">Book Now</a>
+        </button>
+    </div>
+    <!-- Homepage Image End -->
+
+
+
+    <!-- Intro Content Section -->
+    <section class="intro-section container-fluid p-5">
+        <div class="row">
+            <!-- Left Column -->
+            <div
+                class="col-12 col-md-5 d-flex justify-content-center align-items-center text p-2 p-md-5 text-md-right pr-md-1 text-md-end">
+
+                <p>The College of Social Science and Philosophy (CSSP) is an integral part of the academic landscape of
+                    the University of the Philippines Diliman. Located in Palma Hall, CSSP houses the following
+                    departments: Anthropology, Geography, History, Linguistics, Philosophy, Political Science,
+                    Psychology, Sociology, and the Population Institute. To support its students, faculty, staff, and
+                    other organizations, it promotes holistic learning by providing spaces to hold academic meetings and
+                    events. These spaces are equipped with modern technology and can be configured to meet the specific
+                    needs of each group.</p>
+            </div>
+
+            <!-- Vertical Divider -->
+            <div class="d-none d-md-block col-md-1">
+                <div class="vertical-line"></div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center image-placeholder-ph p-5">
+                <img src="media/drawing-hall.jpg" alt="Palma Hall" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Gallery Section -->
+    <section class="gallery container-fluid px-5">
+        <div class="row">
+            <div class="col-lg-12 text-center my-2">
+                <h2>CSSP Facilities and Spaces</h2>
+            </div>
+        </div>
+        <div class="gallery-item row">
+            <div class="gallery-card col-lg-3 col-md-4 col-6 col-sm" onclick="setCurrentSlide(1)">
+                <img class="img-fluid" src="./media/Alcove_A.jpg" alt="Alcove A">
+                <p>Alcove A</p>
+            </div>
+            <div class="gallery-card col-lg-3 col-md-4 col-6 col-sm" onclick="setCurrentSlide(2)">
+                <img class="img-fluid" src="./media/Alcove_C.jpg" alt="Alcove C">
+                <p>Alcove C</p>
+            </div>
+            <div class="gallery-card col-lg-3 col-md-4 col-6 col-sm" onclick="setCurrentSlide(3)">
+                <img class="img-fluid" src="./media/AS_parking_lower.jpg" alt="Alcove C">
+                <p>AS Parking Lot (Lower)</p>
+            </div>
+            <div class="gallery-card col-lg-3 col-md-4 col-6 col-sm" onclick="setCurrentSlide(4)">
+                <img class="img-fluid" src="./media/AS_parking_upper.jpg" alt="Alcove C">
+                <p>AS Parking Lot (Upper)</p>
+            </div>
+            <div class="gallery-card col-lg-3 col-md-4 col-6 col-sm" onclick="setCurrentSlide(5)">
+                <img class="img-fluid" src="./media/covered_walk.jpg" alt="Alcove C">
+                <p>PH Covered Walk</p>
+            </div>
+            <div class="gallery-card col-lg-3 col-md-4 col-6 col-sm" onclick="setCurrentSlide(6)">
+                <img class="img-fluid" src="./media/PH119.jpg" alt="Alcove C">
+                <p>Video Conferencing Room (PH119)</p>
+            </div>
+            <div class="gallery-card col-lg-3 col-md-4 col-6 col-sm" onclick="setCurrentSlide(7)">
+                <img class="img-fluid" src="./media/PH400.jpg" alt="Alcove C">
+                <p>Multimedia Room (PH 400)</p>
+            </div>
+            <div class="gallery-card col-lg-3 col-md-4 col-6 col-sm" onclick="setCurrentSlide(8)">
+                <img class="img-fluid" src="./media/PH_1st_floor_lobby.jpg" alt="Alcove C">
+                <p>PH 1st Floor Lobby</p>
+            </div>
+            <div class="gallery-card col-lg-3 col-md-4 col-6 col-sm" onclick="setCurrentSlide(9)">
+                <img class="img-fluid" src="./media/PH_2nd_floor_lobby.jpg" alt="Alcove C">
+                <p>PH 2nd Floor Lobby</p>
+            </div>
+            <div class="gallery-card col-lg-3 col-md-4 col-6 col-sm" onclick="setCurrentSlide(10)">
+                <img class="img-fluid" src="./media/PH_AVR.jpg" alt="Alcove C">
+                <p>Audio Visual Room (PH 207)</p>
+            </div>
+            <div class="gallery-card col-lg-3 col-md-4 col-6 col-sm" onclick="setCurrentSlide(11)">
+                <img class="img-fluid" src="./media/PH_Steps.jpg" alt="Alcove C">
+                <p>PH Steps</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <!-- Bootstrap Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-between">
+                    <h5 class="modal-title" id="imageModalLabel">Gallery</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" class="img-fluid" src="" alt="Gallery Image">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary wide-button"
+                        onclick="changeSlide(-1)">Previous</button>
+                    <button type="button" class="btn btn-secondary wide-button" onclick="changeSlide(1)">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer Start-->
+    <footer>
+        <p style="text-align:center"><img src="./media/cssp_logo.png" alt="logo" width="25" height="25" /> Copyright
+            &copy;
+            2024 College of Social Sciences and Philosophy
+        </p>
+    </footer>
+    <!-- Footer End -->
+
+
+
+    <!-- Gallery Animation -->
+    <script>
+        let currentSlideIndex = 0;
+        const images = [
+            "./media/Alcove_A.jpg",
+            "./media/Alcove_C.jpg",
+            "./media/AS_parking_lower.jpg",
+            "./media/AS_parking_upper.jpg",
+            "./media/covered_walk.jpg",
+            "./media/PH119.jpg",
+            "./media/PH400.jpg",
+            "./media/PH_1st_floor_lobby.jpg",
+            "./media/PH_2nd_floor_lobby.jpg",
+            "./media/PH_AVR.jpg",
+            "./media/PH_Steps.jpg"
+        ];
+
+        function setCurrentSlide(index) {
+            currentSlideIndex = index - 1; // Adjust because array is zero-indexed
+            showModal();
+        }
+
+        function showModal() {
+            const img = document.getElementById('modalImage');
+            img.src = images[currentSlideIndex];
+            $('#imageModal').modal('show');
+        }
+
+        function changeSlide(direction) {
+            currentSlideIndex += direction;
+            if (currentSlideIndex >= images.length) {
+                currentSlideIndex = 0;
+            } else if (currentSlideIndex < 0) {
+                currentSlideIndex = images.length - 1;
+            }
+            showModal();
+        }
+    </script>
+
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
